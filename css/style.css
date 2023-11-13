@@ -256,6 +256,7 @@ header {
   }
 
   main .card {
+    margin-top: 220px;
     /* padding-top: 100px; */
     position: relative;
     height: 1600px;
@@ -337,11 +338,13 @@ header {
 
 @media (max-width: 576px) {
   .container .why {
-    padding: 300px 12px 50px 12px;
+    padding: 50px 12px 0px 12px;
   }
 
   .why .why_title {
     width: 80%;
+    font-size: 20px;
+    font-weight: 800;
   }
 }
 
@@ -783,6 +786,13 @@ header {
     height: 1200px;
   }
 
+  .tour-register-title {
+    width: 80%;
+    font-size: 20px;
+    font-weight: 800;
+    padding-left: 30px;
+  }
+
   .tour-container .tablist {
     display: flex;
     flex-direction: column;
@@ -818,6 +828,10 @@ header {
   }
 
   .asked h1 {
+    font-size: 20px;
+  }
+
+  .asked zz {
     font-size: 20px;
   }
 
@@ -869,10 +883,9 @@ header {
 }
 
 .card {
-  margin-top: 50px;
+  margin: 100px 0px 50px 0;
   padding: 110px 0 90px;
   border-radius: 65px;
-  height: 800px;
   background-repeat: no-repeat;
   background-color: #221B37;
   background-size: cover;
@@ -1251,9 +1264,7 @@ a {
 }
 
 /* css app */
-.tour-container {
-  margin-top: 140px;
-}
+.tour-container {}
 
 .form-register-tour {
   max-width: 901px;
@@ -1861,4 +1872,262 @@ a {
   footer {
     display: none;
   }
+}
+
+.tour-container {
+  margin-top: 140px;
+}
+
+.form-register-tour {
+  max-width: 901px;
+  margin: 40px auto 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  overflow: hidden !important;
+}
+
+.tablist-step {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #d5d1d9;
+}
+
+.tablist-step_item_btn {
+  display: block;
+  padding: 20px 10px;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: 1px solid #baa5d6;
+  text-align: center;
+  width: 100%;
+}
+
+.tablist-step_item:last-child {
+  margin-left: 1px;
+}
+
+.tablist-step_item_btn.disabled {
+  color: #95a4be;
+  cursor: not-allowed;
+  background-color: #eee;
+}
+
+.tablist-step_item_btn.disabled:hover {
+  color: #95a4be;
+  cursor: not-allowed;
+}
+
+.tablist-step_item_btn.active {
+  background-color: #bc66e4;
+  color: #fff;
+  -webkit-box-shadow: 7px -2px 10px rgba(0, 0, 0, .2);
+  box-shadow: 10px -2px 10px rgba(0, 0, 0, .2);
+  position: relative;
+}
+
+.tablist-step_item_btn.active:hover {
+  color: #fff;
+}
+
+.form_input {
+  background-color: #F3EEF7;
+}
+
+.rank {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.btn-check:active+.btn-outline-danger,
+.btn-check:checked+.btn-outline-danger,
+.btn-outline-danger.active,
+.btn-outline-danger.dropdown-toggle.show,
+.btn-outline-danger:active {
+  color: #fff;
+  background-color: #8A36B1;
+  border-color: #8A36B1;
+}
+
+.btn-outline-danger:hover {
+  color: #8d7bb2;
+  background-color: #F4EFF8;
+  border-color: #8A36B1;
+}
+
+.btn-outline-danger {
+  color: #8d7bb2;
+  border-color: #8d7bb2;
+  padding: 10px 20px;
+}
+
+.btn-group-vertical>.btn:not(:last-child):not(.dropdown-toggle),
+.btn-group-vertical>.btn-group:not(:first-child)>.btn,
+.btn-group-vertical>.btn~.btn {
+  border-radius: 0.25rem;
+}
+
+.label {
+  color: #5a5081;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Custom styles for the select2 text */
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  line-height: 40px;
+  /* Adjust the line height as needed */
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 40px;
+}
+
+#dateRange {
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #640590;
+  /* Đường viền màu #640590 */
+  border-radius: 4px;
+  /* Để bo tròn các góc */
+  padding-right: 30px;
+  /* Để tạo khoảng trống bên phải cho biểu tượng */
+}
+
+.title_input {
+  margin-bottom: 10px;
+}
+
+.item-input {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  max-width: 222px;
+  width: 100%;
+}
+
+.select2-selection__rendered {
+  line-height: 43px !important;
+
+}
+
+.select2-selection__rendered {
+  background-color: #F3EEF7;
+
+  max-width: 222px;
+}
+
+.select2-container .select2-selection--single {
+  height: 45px !important;
+  border: 1px solid #640590 !important;
+  max-width: 222px;
+}
+
+.select2-selection__arrow {
+  height: 43px !important;
+}
+
+.input_code {
+  padding: 9px 0px;
+  border: 1px solid #640590 !important;
+  border-radius: 3px;
+  padding-left: 8px;
+}
+
+.line {
+  border-bottom: 1px solid;
+
+}
+
+
+hr {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.next-step {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+  align-items: center;
+
+}
+
+.next-btn {
+  color: #FFF;
+  background-color: #8A36B1;
+  padding: 10px 50px;
+  border-radius: 5px;
+}
+
+.error-message{
+  color: red;
+  display: none;
+}
+.error-message1 {
+  color: red;
+  display: none;
+}
+
+.back {
+  display: none;
+}
+
+.title_buy {
+  text-align: center;
+  padding-top: 15px;
+}
+
+.input_step2 {
+  display: flex;
+  justify-content: center;
+
+  gap: 0 40px;
+}
+
+
+
+.top3 {}
+
+.addtour:hover {
+  color: #fff;
+}
+
+@media (max-width: 576px) {
+
+  .top,
+  .top2,
+  .input_step2 {
+    flex-direction: column;
+  }
+  .input_step2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 40px;
+  }
+  .next-btn {
+    color: #FFF;
+    background-color: #8A36B1;
+    padding: 10px 10px;
+    border-radius: 5px;
+  }
+
+}
+
+.hide {
+  display: none;
 }
