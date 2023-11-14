@@ -334,6 +334,7 @@ header {
   .tour-resgiter-bottom .tour-register-step {
     font-size: 14px;
   }
+
   .tour__timeline .timeline__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -342,126 +343,131 @@ header {
     max-width: 360px;
     margin: 0 auto;
     background: url(https://ektatraveling.com/assets/img/tour-form/time-line-m.svg)50% 30%no-repeat;
-}
-.tour {
-  padding-top: 180px
+  }
+
+  .tour {
+    padding-top: 180px
+  }
+
+  .tour__title {
+    margin-bottom: 40px
+  }
+
+  .tour__timeline {
+    margin-bottom: 30px
+  }
+
+  .tour__form {
+    max-width: 500px
+  }
+
+  .timeline__list,
+  .tour__form form {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+  }
+
+  .tour__form form {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr
+  }
+
+  .timeline__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    max-width: 360px;
+    margin: 0 auto;
+    background: url(../img/tour-form/time-line-m.svg)50% 30%no-repeat
+  }
+
+  .tour {
+    padding-top: 180px
+  }
+
+  .tour__title {
+    margin-bottom: 40px
+  }
+
+  .tour__timeline {
+    margin-bottom: 30px
+  }
+
+  .tour__form {
+    max-width: 500px
+  }
+
+  .timeline__list,
+  .tour__form form {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+  }
+
+  .tour__form form {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr
+  }
+
+  .timeline__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    max-width: 360px;
+    margin: 0 auto;
+    background: url(../img/tour-form/time-line-m.svg)50% 30%no-repeat
+  }
+
+  .timeline__item:nth-child(odd) {
+    -ms-flex-item-align: start;
+    align-self: flex-start
+  }
+
+  .timeline__item:nth-child(even) {
+    -ms-flex-item-align: end;
+    align-self: flex-end
+  }
+
+  .timeline__item:nth-child(1) {
+    -webkit-transform: translate(20px, 30px);
+    -ms-transform: translate(20px, 30px);
+    transform: translate(10px, 50px)
+  }
+
+  .timeline__item:nth-child(2) {
+    -webkit-transform: translate(-20px, -5px);
+    -ms-transform: translate(-20px, -5px);
+    transform: translate(-20px, -5px)
+  }
+
+  .timeline__item:nth-child(4) {
+    -webkit-transform: translate(-20px, -12px);
+    -ms-transform: translate(-20px, -12px);
+    transform: translate(-20px, -100px)
+  }
+
+  .timeline__item:nth-child(3) {
+
+    transform: translate(20px, -50px)
+  }
+
+  .timeline__item:nth-child(5) {
+    -webkit-transform: translate(15px, -14px);
+    -ms-transform: translate(15px, -14px);
+    transform: translate(10px, -150px)
+  }
+
+  .timeline__item::before {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px
+  }
+
 }
 
-.tour__title {
-  margin-bottom: 40px
-}
-
-.tour__timeline {
-  margin-bottom: 30px
-}
-
-.tour__form {
-  max-width: 500px
-}
-
-.timeline__list,.tour__form form {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center
-}
-
-.tour__form form {
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr
-}
-
-.timeline__list {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  max-width: 360px;
-  margin: 0 auto;
-  background: url(../img/tour-form/time-line-m.svg)50% 30%no-repeat
-}
-
-.tour {
-  padding-top: 180px
-}
-
-.tour__title {
-  margin-bottom: 40px
-}
-
-.tour__timeline {
-  margin-bottom: 30px
-}
-
-.tour__form {
-  max-width: 500px
-}
-
-.timeline__list,.tour__form form {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center
-}
-
-.tour__form form {
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr
-}
-
-.timeline__list {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  max-width: 360px;
-  margin: 0 auto;
-  background: url(../img/tour-form/time-line-m.svg)50% 30%no-repeat
-}
-
-.timeline__item:nth-child(odd) {
-  -ms-flex-item-align: start;
-  align-self: flex-start
-}
-
-.timeline__item:nth-child(even) {
-  -ms-flex-item-align: end;
-  align-self: flex-end
-}
-
-.timeline__item:nth-child(1) {
-  -webkit-transform: translate(20px,30px);
-  -ms-transform: translate(20px,30px);
-  transform: translate(10px,50px)
-}
-
-.timeline__item:nth-child(2) {
-  -webkit-transform: translate(-20px,-5px);
-  -ms-transform: translate(-20px,-5px);
-  transform: translate(-20px,-5px)
-}
-
-.timeline__item:nth-child(4) {
-  -webkit-transform: translate(-20px,-12px);
-  -ms-transform: translate(-20px,-12px);
-  transform: translate(-20px,-100px)
-}
-.timeline__item:nth-child(3) {
-
-  transform: translate(20px,-50px)
-}
-
-.timeline__item:nth-child(5) {
-  -webkit-transform: translate(15px,-14px);
-  -ms-transform: translate(15px,-14px);
-  transform: translate(10px,-150px)
-}
-
-.timeline__item::before {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 10px
-}
-
-}
 @media (max-width: 576px) {
   .container .why {
     padding: 50px 12px 0px 12px;
@@ -906,8 +912,12 @@ header {
   margin-bottom: 75px;
 }
 
+.tour-register-title {
+  margin-bottom: 50px;
+}
+
 @media (max-width: 576px) {
-  
+
 
   .tour-register-title {
     width: 80%;
@@ -1255,7 +1265,7 @@ header {
 }
 
 .asked {
-  padding-top: 150px;
+  padding-top: 30px;
 }
 
 
@@ -1956,15 +1966,18 @@ a {
     margin-top: 30px;
     background-color: #221b37;
   }
+
   .card_footer3 {
     background: url("../img/card-3-footer.svg");
     height: 140px;
     width: 100%;
     border-radius: 7px;
   }
-  .asked{
+
+  .asked {
     padding-top: 0;
   }
+
   .footer {}
 
   .footer_link {}
@@ -2013,7 +2026,7 @@ a {
 }
 
 .tour-container {
-  margin-top: 140px;
+  margin-top: 70px;
 }
 
 .form-register-tour {
@@ -2211,10 +2224,11 @@ hr {
   border-radius: 5px;
 }
 
-.error-message{
+.error-message {
   color: red;
   display: none;
 }
+
 .error-message1 {
   color: red;
   display: none;
@@ -2251,12 +2265,14 @@ hr {
   .input_step2 {
     flex-direction: column;
   }
+
   .input_step2 {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0 40px;
   }
+
   .next-btn {
     color: #FFF;
     background-color: #8A36B1;
@@ -2269,24 +2285,26 @@ hr {
 .hide {
   display: none;
 }
-.tour__timeline{
-    -webkit-tap-highlight-color: transparent;
-    --swiper-theme-color: #007aff;
-    --swiper-navigation-size: 44px;
-    -webkit-text-size-adjust: 100%;
-    font-family: "Raleway","serif";
-    font-weight: 400;
-    color: #000;
-    line-height: 1.175;
-    font-feature-settings: "pnum"on,"lnum"on;
-    font-size: 18px;
-    -webkit-box-direction: normal;
-    padding: 0;
-    margin: 0;
-    border: 0;
-    box-sizing: border-box;
-    margin-bottom: 58px;
+
+.tour__timeline {
+  -webkit-tap-highlight-color: transparent;
+  --swiper-theme-color: #007aff;
+  --swiper-navigation-size: 44px;
+  -webkit-text-size-adjust: 100%;
+  font-family: "Raleway", "serif";
+  font-weight: 400;
+  color: #000;
+  line-height: 1.175;
+  font-feature-settings: "pnum" on, "lnum" on;
+  font-size: 18px;
+  -webkit-box-direction: normal;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  margin-bottom: 58px;
 }
+
 .timeline__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2294,22 +2312,27 @@ hr {
   counter-reset: section;
   background: url(https://ektatraveling.com/assets/img/tour-form/time-line.svg)47.5% 20%/70%no-repeat;
 }
-ol, ul {
+
+ol,
+ul {
   margin-top: 0;
   margin-bottom: 10px;
 }
-  .timeline__item {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 20%;
-    flex: 0 0 20%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    font-size: calc(13px + 4*((100vw - 320px)/1120));
-    text-align: center;
+
+.timeline__item {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 20%;
+  flex: 0 0 20%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-size: calc(13px + 4*((100vw - 320px)/1120));
+  text-align: center;
 }
-.timeline__item, .timeline__item::before {
+
+.timeline__item,
+.timeline__item::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2317,9 +2340,11 @@ ol, ul {
   -ms-flex-align: center;
   align-items: center;
 }
+
 ul li {
   list-style: none;
 }
+
 .timeline__item::before {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -2335,7 +2360,9 @@ ul li {
   background: #d4c8e7;
   margin-bottom: 30px;
 }
-.timeline__item, .timeline__item::before {
+
+.timeline__item,
+.timeline__item::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2343,6 +2370,7 @@ ul li {
   -ms-flex-align: center;
   align-items: center;
 }
+
 .timeline__list .active:before {
   background: #bc66e4;
   color: #fff;
