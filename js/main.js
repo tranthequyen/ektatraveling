@@ -174,3 +174,57 @@ scrollTo.forEach(function (button) {
         });
     });
 });
+
+
+const scrollToPrice = document.querySelector(".price1")
+const scrollToFor = document.querySelector(".for1")
+const scrollToFeed = document.querySelector(".feedback1")
+const scrollToContact = document.querySelector(".contact1")
+
+
+
+
+
+scrollToContact.addEventListener('click', function () {
+    // Lấy đối tượng footer
+    var footer = document.querySelector('footer');
+    var footerY = footer.offsetTop;
+
+    // Di chuyển đến vị trí của footer
+    window.scrollTo({
+        top: footerY,
+        behavior: 'smooth' // Sử dụng 'smooth' để có hiệu ứng mượt mà
+    });
+});
+scrollToFeed.addEventListener('click', function () {
+    // Lấy đối tượng footer
+    var feed1 = document.querySelector('.feedback_container');
+    var feed1Y = feed1.offsetTop;
+
+    // Di chuyển đến vị trí của footer
+    window.scrollTo({
+        top: feed1Y,
+        behavior: 'smooth' // Sử dụng 'smooth' để có hiệu ứng mượt mà
+    });
+});
+scrollToFor.addEventListener('click', function () {
+    // Lấy đối tượng footer
+    var for1 = document.querySelector('.who');
+    var for1Y = for1.offsetTop;
+
+    // Di chuyển đến vị trí của footer
+    window.scrollTo({
+        top: for1Y,
+        behavior: 'smooth' // Sử dụng 'smooth' để có hiệu ứng mượt mà
+    });
+});
+scrollToPrice.addEventListener('click', function () {
+    // Lấy đối tượng footer
+    var card = document.querySelector('.card');
+    var cardY = card.offsetTop;
+
+    window.scrollTo({
+        top: cardY,
+        behavior: 'smooth' // Sử dụng 'smooth' để có hiệu ứng mượt mà
+    });
+})
