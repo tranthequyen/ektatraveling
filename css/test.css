@@ -1,0 +1,377 @@
+@media (max-width: 576px) {
+    .res_header .menu {
+        display: none;
+    }
+
+    .select-language {
+        padding-left: 50px;
+    }
+
+    .header_banner {
+        border-radius: 0;
+    }
+
+    .banner {
+        padding: 0;
+        margin: 20px 0;
+    }
+
+    .banner .title_banner {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .banner .banner_descr {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    .banner .banner_img {
+        left: 45%;
+        top: 100%;
+        max-width: 504px;
+        min-width: 211px;
+        position: absolute;
+    }
+
+    .banner .btn-buy {
+        padding: 10px 20px;
+    }
+
+    .container .time_clock {
+        top: 42%;
+        left: 36%;
+    }
+
+    .time_clock .time_stop {
+        font-size: 20px;
+    }
+
+    .banner_box {
+        position: absolute;
+
+    }
+
+    .banner_box .banner_card {
+        position: relative;
+        width: 380px;
+        top: 230px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner_box .banner_card .box {
+        padding: 0 10px;
+    }
+
+    .banner_box hr {
+        margin: 0;
+    }
+
+    .banner_box .title_box {
+        padding: 20px 0;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .banner_box .descr {
+        font-size: 12px;
+        color: #ded4ef;
+        font-weight: 600;
+        padding: 20px 0;
+        margin: 0;
+    }
+
+    .banner_box .item_card {
+        padding: 5px;
+        margin: 0;
+    }
+
+    .why h1 {
+        font-weight: bold;
+    }
+
+    main .card {
+        margin-top: 220px;
+        /* padding-top: 100px; */
+        position: relative;
+        height: 1600px;
+        border-radius: 0;
+    }
+
+    .card .timer_card {
+        position: relative;
+        top: 50%;
+        width: 95%;
+        border-radius: 10px;
+        bottom: 0;
+        font-size: 21px;
+        margin-top: 50px;
+
+    }
+
+    .card .items_card {
+        height: 440px;
+        width: 330px;
+
+    }
+
+    .card .tariffs {
+        gap: 50px 0;
+    }
+
+
+    .timer_card h4 {
+        font-size: 15.5px;
+    }
+
+    .time_card .time_stop_card {
+        font-size: 36px;
+    }
+
+    .time_card .time_run {
+        font-size: calc(50px + 40*((100vw - 320px)/1120));
+    }
+
+    .items_card h1 {
+        font-size: 51px;
+    }
+
+    .tour-container .tour-infor {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tour-container .tour-resgiter-bottom {
+        position: relative;
+        top: 360px;
+    }
+
+    .tour-resgiter-bottom .btn-next-step {
+        width: 100px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tour-register-next .tour-btn {
+        font-size: 14px;
+    }
+
+    .tour-resgiter-bottom .tour-cost-old {
+        font-size: 14px;
+    }
+
+    .tour-resgiter-bottom .tour-cost {}
+
+    .tour-resgiter-bottom .tour-register-step {
+        font-size: 14px;
+    }
+
+    .container .why {
+        padding: 50px 12px 0px 12px;
+    }
+
+    .why .why_title {
+        width: 80%;
+        font-size: 20px;
+        font-weight: 800;
+    }
+
+    .time_clock {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .why_center {
+        font-size: 16px;
+    }
+
+    .who {
+        padding: 0 10px 0 10px;
+    }
+
+    .who_bgr {
+        padding-top: 10px;
+        border-radius: 0px;
+    }
+
+    .who_title {
+        margin: 50px 0px 30px 20px;
+    }
+
+    .who_list .row {
+        gap: 0;
+    }
+
+    .who_item img {
+        width: 26px;
+    }
+
+    .who_list h3 {
+        font-size: 16px;
+        margin: 0 0 8px 0;
+
+    }
+
+    .who_item p {
+        padding-left: 40px;
+    }
+
+    .happened {
+        margin-top: 0px;
+        margin-bottom: 50px;
+        padding: 40px 15px 0 15px;
+    }
+
+    .happened h2 {
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+
+    .happened ul li {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    .happened ul {
+        padding-left: 0;
+
+    }
+
+    .happened img {
+        padding-top: 50px;
+    }
+
+    .clients {
+        margin-top: 0px;
+        margin-bottom: 50px;
+        padding: 0px 15px 0 15px;
+    }
+
+    .clients h2 {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .form-register-tour {
+        width: 330px;
+    }
+
+    .tour-register-title {
+        width: 80%;
+        font-size: 20px;
+        font-weight: 800;
+        padding-left: 30px;
+    }
+
+    .tour-container .tablist {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tour-container .tour-register-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tour-register-step-list #step2 {
+        height: auto;
+    }
+
+    .tour-container .tour-register-step-item {
+        height: auto;
+    }
+
+    .feedback_container .feedback {
+        padding: 0 10px 0 10px;
+    }
+
+    .feedback_container .feedback_title {
+        font-size: 20px;
+    }
+
+    .clients .clients_title h2 {
+        font-size: 20px;
+    }
+
+    .happened .happened_title h2 {
+        font-size: 20px;
+    }
+
+    .asked h1 {
+        font-size: 20px;
+    }
+
+    .container .asked {
+        padding-top: 50px;
+    }
+
+    .footer_container {
+        display: block;
+        margin-top: 30px;
+        background-color: #221b37;
+    }
+
+    .footer {}
+
+    .footer_link {}
+
+    .footer_link a {
+        padding-bottom: 15px;
+    }
+
+    .footer_copy {
+        padding: 10px 0 20px 0;
+    }
+
+    .dropdown_footer {
+        background-color: #562b84;
+        width: 50px;
+        height: 200px;
+        border-radius: 10px;
+    }
+
+    .footer_contact {
+        margin: 50px 0 50px 0;
+    }
+
+    .footer_contact .social {}
+
+    .footer_contact .phone {
+        border-radius: 40px;
+        padding: 8px 8px;
+    }
+
+    .footer_pay {}
+
+    .footer_pay .pay {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .footer .dropdown_footer li {}
+
+    footer {
+        display: none;
+        /* background; */
+    }
+
+    .top,
+    .top2,
+    .input_step2 {
+        flex-direction: column;
+    }
+
+    .next-btn {
+        color: #FFF;
+        background-color: #8A36B1;
+        padding: 10px 10px;
+        border-radius: 5px;
+    }
+
+}
