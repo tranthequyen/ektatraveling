@@ -790,6 +790,13 @@ header {
     padding-left: 30px;
   }
 
+  .tour-register-title {
+    width: 80%;
+    font-size: 20px;
+    font-weight: 800;
+    padding-left: 30px;
+  }
+
   .tour-container .tablist {
     display: flex;
     flex-direction: column;

@@ -159,6 +159,8 @@ next_step.addEventListener("click", function () {
                   alert("Vui lòng nhập phone");
                   return;
             }
+
+
             else {
                   step1.classList.add("hide");
                   step2.classList.add("hide");
