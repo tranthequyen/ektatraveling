@@ -159,3 +159,18 @@ $(document).ready(function () {
 });
 
 
+const scrollTo = document.querySelectorAll(".card_scroll")
+
+
+
+scrollTo.forEach(function (button) {
+    button.addEventListener('click', function () {
+        // Lấy đối tượng footer
+        const form = document.querySelector(".form-register-tour")
+        var formY = form.offsetTop;
+        window.scrollTo({
+            top: formY,
+            behavior: 'smooth' // Sử dụng 'smooth' để có hiệu ứng mượt mà
+        });
+    });
+});

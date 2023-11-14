@@ -105,7 +105,11 @@ const step_3 = document.getElementById("step-3")
 const current_step = document.getElementById("current_step")
 const errorMessage1 = document.getElementById("error-message");
 const back = document.querySelector(".back")
-
+const timeline_one = document.querySelector(".timeline_one")
+const timeline_two = document.querySelector(".timeline_two")
+const timeline_three = document.querySelector(".timeline_three")
+const timeline_four = document.querySelector(".timeline_four")
+const timeline_five = document.querySelector(".timeline_five")
 next_step.addEventListener("click", function () {
 
       // Kiểm tra nếu checkbox không được chọn
@@ -129,6 +133,8 @@ next_step.addEventListener("click", function () {
       phoneElement.textContent = phone.value;
 
       if (!step1.classList.contains("hide")) {
+            timeline_one.classList.remove("active")
+            timeline_two.classList.add("active")
             step1.classList.add("hide");
             step2.classList.remove("hide");
             step3.classList.add("hide");
@@ -159,9 +165,9 @@ next_step.addEventListener("click", function () {
                   alert("Vui lòng nhập phone");
                   return;
             }
-
-
             else {
+                  timeline_two.classList.remove("active")
+                  timeline_three.classList.add("active")
                   step1.classList.add("hide");
                   step2.classList.add("hide");
                   step3.classList.remove("hide");
@@ -175,9 +181,10 @@ next_step.addEventListener("click", function () {
 });
 back.addEventListener("click", function () {
       if (!step1.classList.contains("hide")) {
-            // If currently on step 1, there is no step before it, so do nothing or handle as needed.
             return;
       } else if (!step2.classList.contains("hide")) {
+            timeline_one.classList.add("active")
+            timeline_two.classList.remove("active")
             // If currently on step 2, go back to step 1
             step1.classList.remove("hide");
             step2.classList.add("hide");
@@ -189,7 +196,8 @@ back.addEventListener("click", function () {
             back.style.display = "none"; // Hide the back button on step 1
             current_step.textContent = "Step 1 / 3";
       } else if (!step3.classList.contains("hide")) {
-            // If currently on step 3, go back to step 2
+            timeline_two.classList.add("active")
+            timeline_three.classList.remove("active")
             step1.classList.add("hide");
             step2.classList.remove("hide");
             step3.classList.add("hide");
